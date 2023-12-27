@@ -1,0 +1,121 @@
+/* Animation */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: #000000;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+}
+
+#animations {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main_body {
+    position: absolute;
+    left: .5vw;
+    bottom: 0vh;
+    /* top: 100vh; */
+    padding: 0;
+    height: 96dvh;
+    width: 99dvw;
+    text-align: center;
+    z-index: 100;
+}
+
+.body_class img {
+    width: 10vw;
+    border-radius: 50%;
+}
+
+.body_class a {
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.body_class a:hover {
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.container{
+    /* z-index: ; */
+    height: 100%;
+    width: 100%;
+    background: #010b2b3d;
+    border-style:groove;
+    border-radius: 20px;
+    border-width: .5px;
+    border-color: rgba(240, 248, 255, 0.377);
+    /* filter: blur(1px); */
+    backdrop-filter: blur(3px);
+}
+.left{
+    position: absolute;
+    bottom: 1.5%;
+    left: 1%;
+    height:97%;
+    width: 23.5%;
+    border-style:groove;
+    border-radius: 20px;
+    border-width: .5px;
+    border-color: rgba(240, 248, 255, 0.377);
+    background:linear-gradient(to bottom left,#01005825,#0000002d) ;
+
+}
+.right{
+    position: absolute;
+    bottom: 1.5%;
+    right: 1%;
+    height:97%;
+    width: 73.5%;
+    border-style:groove;
+    border-radius: 20px;
+    border-width: .5px;
+    border-color: rgba(240, 248, 255, 0.377);
+    background:linear-gradient(to bottom right,#01005825,#0000002d) ;
+    /* backdrop-filter: blur(0.4vw); */
+
+}
+
+/* Responsiveness via screen widths */
+
+@media screen and (max-width: 768px) {
+    .body_class img {
+        width: 30%;
+        border-radius: 50%;
+    }
+    .body_class a {
+        font-size: 1.3rem;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .body_class img {
+        width: 25%;
+        border-radius: 50%;
+    }
+    .body_class a {
+        font-size: 1.3rem;
+        padding: 4px;
+    }
+}
