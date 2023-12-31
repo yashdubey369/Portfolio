@@ -161,6 +161,7 @@ header button:hover {
     letter-spacing: 2px;
 }
 
+
 .header-links {
     display: flex;
     justify-content: space-between;
@@ -466,8 +467,8 @@ footer p a:hover {
 /* media queries  */
 
 @media (max-width: 860px) {
-
     /* header media queries */
+
     .header-links {
         position: absolute;
         flex-direction: column;
@@ -475,7 +476,8 @@ footer p a:hover {
         top: 0;
         right: -100vh;
         display: none;
-        background-color: var(--primary-color);
+        background-color: rgba(0, 0, 0, 0.733);
+        backdrop-filter: blur(20px);
         justify-content: start;
         padding: 20px;
         transition: right 0.3s ease;
@@ -506,28 +508,50 @@ footer p a:hover {
     .hero-section {
         flex-direction: column;
     }
+    .service-section{
+        /* height: -100px; */
 
+    }
     /* service section */
     .service-cards-container {
         flex-direction: column;
+        width: 100%;
     }
 
     .service-card {
+        padding-bottom: 0;
         margin: 10px 0;
+        width: 100%;
+        height:30vh;
+         /* gap:30px; */
     }
-
+    .service-card p{
+        display: -webkit-box;
+       -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+         overflow: hidden;
+         text-overflow: ellipsis;
+    }
     /* about section media queries */
     .about-section {
         flex-direction: column;
+        height: 102dvh;
+        display: block;
+        /* padding: 20px; */
+        overflow: hidden;
+        font-size: medium;
     }
-
     .about-section ol {
         margin-left: 0;
-        margin-top: 40px;
+        margin-top: 30px;
+        justify-content: center;
     }
 
     .about-section img {
-        height: auto;
+        height: 120px;
+        width: 120px;
+        position: relative;
+        /* top: 0px; */
     }
 
     .about-section ol li h1 {
@@ -536,6 +560,21 @@ footer p a:hover {
 
     .about-section {
         padding: 40px 30px;
+    }
+    .skills-sec{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .skills{
+        display:flex ;
+        width: 100%;
+        margin-top: 10px;
+        gap: 8px;
+        justify-content:space-between;
+    }
+    .skills-card{
+        /* margin-top: 10px; */
+        font-size: small;
     }
 
     /* contact section media queries */
